@@ -19,20 +19,20 @@ void DELEAY()
 
 void testAppend()
 {
-    lwTCPClientLite client(Userkey, Gateway);
+    //lwTCPClientLite client(Userkey, Gateway);
     client.update();
 
-    delay(15000);
+    //delay(15000);
 
-    char* fc;
-    fc=(char*) malloc(1);
+    //char* fc;
+    //fc=(char*) malloc(1);
 
     const char* sensor="WD";
     const char* h="SD";
     const char* ydl="YDL";
 
-    client.append(h,d);
-    client.append(sensor,t);
+    //client.append(h,d);
+    //client.append(sensor,t);
     client.append(ydl,l);
 
     client.upload();
@@ -41,7 +41,7 @@ void testAppend()
     d+=0.1;
     l+=10;
 
-    converter.FreeAndNil(fc);
+    //converter.FreeAndNil(fc);
 
 }
 
@@ -49,8 +49,6 @@ void testAppend()
 void setup()
 {
     Serial.begin(38400);
-    //client.lastTime = 200;
-
 
     testAppend();
     DELEAY();

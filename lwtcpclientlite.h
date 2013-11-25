@@ -36,7 +36,7 @@ public:
     /** Default constructor */
     lwTCPClientLite(const char* userkey, const char* gateway) : lwGenericClient(userkey, gateway)
     {
-        intervalUpdate = 50000;     //50s
+        intervalUpdate = 20000;     //50s
         lastUpdate = millis();
         setLeadingChars();
     };
