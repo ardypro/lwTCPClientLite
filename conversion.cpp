@@ -65,7 +65,7 @@ unsigned int conversion::floatToStr(float value,unsigned int digits, char* &str)
     len=lenOfInt(value)+digits+2;   //小数点和null终止符
     str = (char*) malloc(len);
 
-    dtostrf (value, 1, digits, str);  //arduino style
+    dtostrf (value, 1, digits, str);  //arduino style，但是在CB的模拟器中无法编译
 
     //snprintf(str,len,"%g",value);
 

@@ -36,12 +36,12 @@ public:
     /** Default constructor */
     lwTCPClientLite(const char* userkey, const char* gateway) : lwGenericClient(userkey, gateway)
     {
-        intervalUpdate = 20000;     //50s
+        intervalUpdate = 50000;     //50s
         lastUpdate = millis();
         setLeadingChars();
     };
 
-    virtual  void update();         //发心跳包
+    virtual  void connect();         //发心跳包
     virtual  void append(const char* sensor, bool value);
     virtual  void append(const char* sensor, int value);
     virtual  void append(const char* sensor, unsigned int value);

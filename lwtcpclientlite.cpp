@@ -75,10 +75,10 @@ void lwTCPClientLite::upload()
     lwGenericClient::upload();  //如果不写这一句，基类中同名函数被隐藏；如果没有其它操作，则可以不声明此函数，实例调用upload的时候，直接调用基类的同名方法
 };
 
-void lwTCPClientLite::update()
+void lwTCPClientLite::connect()
 {
     // TODO (Ardypro#1#): 后面改为跟interval有关
-    if(true)
+    //if((millis()- lastUpdate)>= intervalUpdate)
     {
         char* cmd;
         int len = strlen(userKey) + strlen(gateWay) + 51;
@@ -86,6 +86,7 @@ void lwTCPClientLite::update()
         snprintf(cmd, len, "{\"method\":\"update\",\"gatewayNo\":\"%s\",\"userkey\":\"%s\"}&^!", gateWay, userKey);
 
         DEBUG.print(cmd);
+        lastUpdate= millis();
     }
 }
 

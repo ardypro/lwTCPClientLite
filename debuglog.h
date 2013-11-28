@@ -9,11 +9,18 @@
 #include "stdio.h"
 #endif
 
+//debuglog类负责对外通信，DEBUGGING模式时使用串口，
+//其余模式使用SerialWifi等网络终端
 class debuglog
 {
 public:
-    debuglog() {}
-    virtual ~debuglog() {}
+    debuglog()
+    {
+    }
+
+    virtual ~debuglog()
+    {
+    }
 
     void println(char* msg="")
     {

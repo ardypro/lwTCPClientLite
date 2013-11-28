@@ -5,58 +5,42 @@
 
 
 const char* Userkey = "029b3884b91e4d00b514158ba1e2ac57";
-const char* Gateway = "01";
+const char* Gateway = "02";
 int t = 0;
 long l=0L;
 double d=0.00f;
 
 lwTCPClientLite client(Userkey, Gateway);
-
-void DELEAY()
-{
-    delay(20000);
-}
-
-void testAppend()
-{
-    //lwTCPClientLite client(Userkey, Gateway);
-    client.update();
-
-    //delay(15000);
-
-    //char* fc;
-    //fc=(char*) malloc(1);
-
-    const char* sensor="WD";
-    const char* h="SD";
-    const char* ydl="YDL";
-
-    //client.append(h,d);
-    //client.append(sensor,t);
-    client.append(ydl,l);
-
-    client.upload();
-
-    t++;
-    d+=0.1;
-    l+=10;
-
-    //converter.FreeAndNil(fc);
-
-}
-
-
+unsigned long lastUpload;
+unsigned long lastUpdate;
 void setup()
 {
     Serial.begin(38400);
-
-    testAppend();
-    DELEAY();
+    client.connect();
+    client.append("test", -1);
+    client.upload();
+    lastUpload=millis();
+    lastUpdate=lastUpload;
+    delay(10000);
 }
 
+int updates=1;
 void loop()
 {
-    testAppend();
-    DELEAY();
+    unsigned long t=millis();
+    if((t-lastUpdate)>50000)
+    {
+        client.connect();
+        lastUpdate=t;
+    }
+
+    if((t- lastUpload)>=10000)
+    {
+        client.append("test", l);
+        client.upload();
+        lastUpload=t;
+        l++;
+    }
+
 
 }
