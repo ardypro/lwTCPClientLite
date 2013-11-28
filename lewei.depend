@@ -671,29 +671,29 @@
 	"HardwareSerial.h"
 	"stdio.h"
 
-1382857683 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.cpp
+1385610413 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.cpp
 	"lwgenericclient.h"
 	"conversion.h"
 
-1385384372 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.h
+1385610388 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.h
 	"ipost.h"
 	"debuglog.h"
 	"Arduino.h"
 
 1382857683 e:\repo\git\ongithub\lwclients\lwtcpclientlite\ipost.h
 
-1385606382 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwtcpclientlite.cpp
+1385610447 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwtcpclientlite.cpp
 	"lwTCPClientLite.h"
 	"HardwareSerial.h"
 	"stdio.h"
 	<string.h>
 
-1385385047 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwtcpclientlite.h
+1385610401 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwtcpclientlite.h
 	"HardwareSerial.h"
 	"lwgenericclient.h"
 	"conversion.h"
 
-1385609121 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lewei.ino
+1385610564 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lewei.ino
 	"lwtcpclientlite.h"
 	"conversion.h"
 

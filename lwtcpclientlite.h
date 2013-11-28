@@ -36,8 +36,6 @@ public:
     /** Default constructor */
     lwTCPClientLite(const char* userkey, const char* gateway) : lwGenericClient(userkey, gateway)
     {
-        intervalUpdate = 50000;     //50s
-        lastUpdate = millis();
         setLeadingChars();
     };
 
@@ -56,8 +54,6 @@ protected:
     virtual void uploadValue();     //上传数据方法的执行部分
     virtual void clearCommand();
 private:
-    unsigned long lastUpdate;       //上次心跳包发送时间
-    unsigned int intervalUpdate;    //心跳包发送间隔
     void setLeadingChars();
 };
 

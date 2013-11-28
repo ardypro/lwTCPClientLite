@@ -51,12 +51,10 @@ public:
         gateWay = gateway;
         cmdJSON=(char*) malloc(9);
         clearCommand();
-        lastTime = millis();
     }
 
     lwGenericClient() : IPost()
     {
-        lastTime = millis();
     }
 
     void setUserKey (const char* userkey)
@@ -87,8 +85,7 @@ protected:
 
     virtual void clearCommand();
     virtual void appendCommand(const char* cmd);
-    unsigned int interval;
-    unsigned long lastTime;
+
 private:
 
 };

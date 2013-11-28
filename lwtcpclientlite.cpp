@@ -77,17 +77,12 @@ void lwTCPClientLite::upload()
 
 void lwTCPClientLite::connect()
 {
-    // TODO (Ardypro#1#): 后面改为跟interval有关
-    //if((millis()- lastUpdate)>= intervalUpdate)
-    {
         char* cmd;
         int len = strlen(userKey) + strlen(gateWay) + 51;
         cmd = (char*) malloc(len);
         snprintf(cmd, len, "{\"method\":\"update\",\"gatewayNo\":\"%s\",\"userkey\":\"%s\"}&^!", gateWay, userKey);
 
         DEBUG.print(cmd);
-        lastUpdate= millis();
-    }
 }
 
 void lwTCPClientLite::uploadValue()
