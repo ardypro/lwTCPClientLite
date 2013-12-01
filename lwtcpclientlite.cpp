@@ -83,6 +83,9 @@ void lwTCPClientLite::connect()
         snprintf(cmd, len, "{\"method\":\"update\",\"gatewayNo\":\"%s\",\"userkey\":\"%s\"}&^!", gateWay, userKey);
 
         DEBUG.print(cmd);
+
+        free(cmd);
+        cmd=NULL;
 }
 
 void lwTCPClientLite::uploadValue()

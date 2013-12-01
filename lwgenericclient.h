@@ -55,6 +55,7 @@ public:
 
     lwGenericClient() : IPost()
     {
+
     }
 
     void setUserKey (const char* userkey)

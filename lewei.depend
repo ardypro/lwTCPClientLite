@@ -656,7 +656,7 @@
 	"stdio.h"
 	<string.h>
 
-1385608910 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\conversion.cpp
+1385862377 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\conversion.cpp
 	"conversion.h"
 	"debuglog.h"
 	"HardwareSerial.h"
@@ -675,7 +675,7 @@
 	"lwgenericclient.h"
 	"conversion.h"
 
-1385610388 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.h
+1385712707 e:\repo\git\ongithub\lwclients\lwtcpclientlite\lwgenericclient.h
 	"ipost.h"
 	"debuglog.h"
 	"Arduino.h"
@@ -693,8 +693,9 @@
 	"lwgenericclient.h"
 	"conversion.h"
 
-1385610564 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lewei.ino
+1385861368 source:e:\repo\git\ongithub\lwclients\lwtcpclientlite\lewei.ino
 	"lwtcpclientlite.h"
+	"HardwareSerial.h"
 	"conversion.h"
 
 1361463431 p:\portable app\arduinoide\codeblocks\ardusim\arduino\cores\hardwareserial.h

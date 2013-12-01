@@ -1,8 +1,10 @@
 //#include <Arduino.h>
 #include "lwtcpclientlite.h"
+#include "HardwareSerial.h"
 #include "conversion.h"
 //#include "string.h"
 
+//extern HardwareSerial Serial1;
 
 const char* Userkey = "029b3884b91e4d00b514158ba1e2ac57";
 const char* Gateway = "02";
@@ -15,6 +17,8 @@ unsigned long lastUpload;
 unsigned long lastUpdate;
 void setup()
 {
+    //Serial1.begin(9600);
+
     Serial.begin(38400);
     client.connect();
     client.append("test", -1);
@@ -27,18 +31,20 @@ void setup()
 int updates=1;
 void loop()
 {
-    unsigned long t=millis();
-    if((t-lastUpdate)>50000)
+    //unsigned long t=millis();
+    if((millis()-lastUpdate)>=100)
     {
         client.connect();
-        lastUpdate=t;
+        lastUpdate=millis();
     }
 
-    if((t- lastUpload)>=10000)
+    //if((millis()- lastUpload)>=100)
     {
         client.append("test", l);
         client.upload();
-        lastUpload=t;
+        lastUpload=millis();
         l++;
+
+        delay(100);
     }
 }
