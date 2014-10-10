@@ -4,10 +4,15 @@
 #include "conversion.h"
 //#include "string.h"
 
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#include <DHT.h>
+
+
 //extern HardwareSerial Serial1;
 
 const char* Userkey = "029b3884b91e4d00b514158ba1e2ac57";
-const char* Gateway = "02";
+const char* Gateway = "03";
 int t = 0;
 long l=0L;
 double d=0.00f;
@@ -21,7 +26,7 @@ void setup()
 
     Serial.begin(38400);
     client.connect();
-    client.append("test", -1);
+    client.append("Ti0", -1);
     client.upload();
     lastUpload=millis();
     lastUpdate=lastUpload;
@@ -40,11 +45,11 @@ void loop()
 
     //if((millis()- lastUpload)>=100)
     {
-        client.append("test", l);
+        client.append("Ti0", l);
         client.upload();
         lastUpload=millis();
         l++;
 
-        delay(100);
+        delay(12000);
     }
 }

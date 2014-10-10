@@ -1,0 +1,100 @@
+//第一次
+found 0 DS18B20 devices.
+Parasite power is: OFF
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"29.44"}]}&^!
+Posting sensor ToAir value:	29.44
+{"method": "upload","data":[{"Name":"To1","Value":"27.44"}]}&^!
+Posting sensor To1 value:	27.44
+{"method": "upload","data":[{"Name":"To2","Value":"27.06"}]}&^!
+Posting sensor To2 value:	27.06
+
+
+//第二次
+found 0 DS18B20 devices.
+Parasite power is: OFF
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"0.00"}]}&^!
+Posting sensor ToAir value:	0.00
+{"method": "upload","data":[{"Name":"To1","Value":"0.00"}]}&^!
+Posting sensor To1 value:	0.00
+{"method": "upload","data":[{"Name":"To2","Value":"0.00"}]}&^!
+Posting sensor To2 value:	0.00
+
+
+//第三次
+found 3 DS18B20 devices.
+Parasite power is: OFF
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"29.25"}]}&^!
+Posting sensor ToAir value:	29.25
+{"method": "upload","data":[{"Name":"To1","Value":"27.44"}]}&^!
+Posting sensor To1 value:	27.44
+{"method": "upload","data":[{"Name":"To2","Value":"27.06"}]}&^!
+Posting sensor To2 value:	27.06
+
+
+
+{"method": "upload","data":[{"Name":"Ti0","Value":"28.50"}]}&^!
+Posting sensor Ti0 value:	28.50
+{"method": "upload","data":[{"Name":"Hi0","Value":"56.30"}]}&^!
+Posting sensor Hi0 value:	56.30
+
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"29.25"}]}&^!
+Posting sensor ToAir value:	29.25
+{"method": "upload","data":[{"Name":"To1","Value":"27.44"}]}&^!
+Posting sensor To1 value:	27.44
+{"method": "upload","data":[{"Name":"To2","Value":"-127.00"}]}&^!
+Posting sensor To2 value:	-127.00
+
+
+
+{"method": "upload","data":[{"Name":"Ti0","Value":"28.50"}]}&^!
+Posting sensor Ti0 value:	28.50
+{"method": "upload","data":[{"Name":"Hi0","Value":"56.40"}]}&^!
+Posting sensor Hi0 value:	56.40
+
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"29.31"}]}&^!
+Posting sensor ToAir value:	29.31
+{"method": "upload","data":[{"Name":"To1","Value":"27.44"}]}&^!
+Posting sensor To1 value:	27.44
+{"method": "upload","data":[{"Name":"To2","Value":"27.06"}]}&^!
+Posting sensor To2 value:	27.06
+
+
+
+{"method": "upload","data":[{"Name":"Ti0","Value":"28.50"}]}&^!
+Posting sensor Ti0 value:	28.50
+{"method": "upload","data":[{"Name":"Hi0","Value":"57.00"}]}&^!
+Posting sensor Hi0 value:	57.00
+
+
+
+//第三次中间过程
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"-127.00"}]}&^!
+Posting sensor ToAir value:	-127.00
+{"method": "upload","data":[{"Name":"To1","Value":"-127.00"}]}&^!
+Posting sensor To1 value:	-127.00
+{"method": "upload","data":[{"Name":"To2","Value":"-127.00"}]}&^!
+Posting sensor To2 value:	-127.00
+
+
+
+{"method": "upload","data":[{"Name":"Ti0","Value":"28.50"}]}&^!
+Posting sensor Ti0 value:	28.50
+{"method": "upload","data":[{"Name":"Hi0","Value":"57.90"}]}&^!
+Posting sensor Hi0 value:	57.90
+
+{"method":"update","gatewayNo":"03","userkey":"029b3884b91e4d00b514158ba1e2ac57"}&^!
+{"method": "upload","data":[{"Name":"ToAir","Value":"-127.00"}]}&^!
+Posting sensor ToAir value:	-127.00
+{"method": "upload","data":[{"Name":"To1","Value":"27.44"}]}&^!
+Posting sensor To1 value:	27.44
+{"method": "upload","data":[{"Name":"To2","Value":"27.06"}]}&^!
+Posting sensor To2 value:	27.06
